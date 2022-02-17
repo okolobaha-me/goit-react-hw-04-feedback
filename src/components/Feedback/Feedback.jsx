@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import FeedbackOptions from './FeedbackOptions';
 import Statistics from './Statistics';
 import Section from '../Section';
+import s from './Feedback.module.css';
 
 class Feedback extends Component {
   state = {
@@ -42,7 +43,7 @@ class Feedback extends Component {
     const { good, neutral, bad } = this.state;
 
     return (
-      <div>
+      <div className={s.container}>
         <Section
           message={'Please leave feedback'}
           children={

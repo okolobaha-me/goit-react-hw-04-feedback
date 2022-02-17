@@ -1,0 +1,28 @@
+.statContainer {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.stat {
+  margin: 0;
+  padding: 4px;
+}
+
+.bad {
+  background-color: #ad4b4b;
+  color: #ffffff;
+}
+
+.neutral {
+  background-color: #ada04b;
+  color: #ffffff;
+}
+
+.good {
+  background-color: #489431;
+  color: #ffffff;
+}
+
+.stat:not(:last-child) {
+  margin-bottom: 2px;
+}
